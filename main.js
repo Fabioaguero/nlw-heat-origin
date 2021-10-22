@@ -9,10 +9,13 @@ const LinksSocialMedia = {
 
 
 function changeSocialMedia () {
-  for (let li of socialLinks.children) {
-    const social = li.getAttribute('class')
+  for (let a of socialLinks.children) {
+    
+    const social = a.getAttribute('class')
+  
+    
 
-    li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`;
+    a.href = `https://${social}.com/${LinksSocialMedia[social]}`;
   }
 };
 
