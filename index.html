@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   
   <title>Fábio Aguero - DoWhile 2021</title>
 </head>
@@ -16,28 +17,34 @@
 
   <main>
 
-    <div class="container">
+    <div class="container box">
 
       <div class="avatar">
         <span>
           <img src="assets/build.svg" alt="selo">
         </span>
         
-        <img src="https://avatars.githubusercontent.com/u/60341673?v=4" alt="foto do avatar">
+        <img id="userAvatar" src="https://avatars.githubusercontent.com/u/60341673?v=4" alt="foto do avatar">
       </div>
 
       <!--https://lorempixel.com (site para gerar img random publica)-->
 
       <h1 id="userName">Fábio Aguero</h1>
-      <a 
+      <a id="userLink" 
       href="https://github.com/Fabioaguero" 
       target="_blank">
       <img src="/assets/github.svg" alt="">
-      fabioaguero
+      <span id="userLogin">
+        fabioaguero
+      </span>
+      
       </a>
 
-      <p>An instructor focused on helping people start programing for web</p>
+      <p id="userBio">An instructor focused on helping people start programing for web</p>
     
+
+      
+      <!--
       <ul id="socialLinks">
         <li class="youtube">
           <a href="a" target="_blank">
@@ -68,13 +75,78 @@
           </a>
         </li>
       </ul>
+
+      -->
+
     </div>
+    <div class="icons" id="socialLinks">
+      <a href="a" target="_blank" class="facebook">
+         <div class="layer nameFacebook">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fab fa-facebook-f"></span>
+         </div>
+         <div class="text">
+            Facebook
+         </div>
+      </a>
+      <a href="a" target="_blank" class="twitter">
+         <div class="layer nameTwitter">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fab fa-twitter"></span>
+         </div>
+         <div class="text">
+            Twitter
+         </div>
+      </a>
+      <a href="a" target="_blank" class="instagram">
+         <div class="layer nameInstagram">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fab fa-instagram"></span>
+         </div>
+         <div class="text">
+            Instagram
+         </div>
+      </a>
+      <a href="a" target="_blank" class="linkedin">
+         <div class="layer nameLinkedin">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fab fa-linkedin-in"></span>
+         </div>
+         <div class="text">
+            Linkedin
+         </div>
+      </a>
+      <a href="" target="_blank" class="youtube">
+         <div class="layer nameYoutube">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fab fa-youtube"></span>
+         </div>
+         <div class="text">
+            YouTube
+         </div>
+      </a>
+   </div>
     
   </main>
   
 
 
-  <script src="/script.js"></script>
+  <script src="main.js"></script>
  
 
 </body>
